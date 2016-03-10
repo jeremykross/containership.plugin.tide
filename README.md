@@ -14,13 +14,28 @@ ContainerShip Developers - developers@containership.io
 ## Usage
 
 ### Install
-`containership plugin add tide`
+`cs plugin add tide`
 
 ### Update
-`containership plugin update tide`
+`cs plugin update tide`
 
 ### Remove
-`containership plugin remove tide`
+`cs plugin remove tide`
+
+### List Jobs
+`cs tide list-jobs`
+
+### Create Job
+`cs tide create-job example --image myorg/mycron:1.2.2 --cpus 0.1 --memory 128 --env-var KEY=value --instances 1 --schedule "0 0 * * *"`
+
+### Edit Job
+`cs tide edit-job example --image myorg/mycron:1.2.3`
+
+### Show Job
+`cs tide show-job example`
+
+### Remove Job
+`cs tide remove-job example`
 
 ## Contributing
 Pull requests and issues are encouraged!
