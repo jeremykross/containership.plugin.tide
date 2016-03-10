@@ -13,6 +13,7 @@
     "body-parser": "^1.12.0",
     "containership.plugin": "^0.3.0",
     "express": "^4.12.0",
+    "flat": "^2.0.0",
     "lodash": "^3.3.1",
     "mocha": "^2.4.5",
     "node-schedule": "^1.0.0",
