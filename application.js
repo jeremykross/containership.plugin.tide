@@ -26,11 +26,12 @@ module.exports = new ContainershipPlugin({
         else{
             request.config = this.get_config("cli");
 
-            _.each(cli, function(configuration, command){
-                nomnom.command(command).options(configuration.options).callback(configuration.init)
+            var commands = _.map(cli, function(configuration, command){
+                configuration.name = command;
+                return configuration;
             });
 
-            return { nomnom: nomnom };
+            return { commands: commands };
         }
     },
 
